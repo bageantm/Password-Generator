@@ -11,14 +11,14 @@ function generatePassword() {
   if (passwordLength === null) {
     return "";
   }
-    else if (passwordLength <8 || passwordLength >128) {
-       alert("Password is restricted to character lengths between 8 and 128. Password character length allowances are inclusive of 8 and 128.");
+     else if (!(passwordLength >= 8 && passwordLength <= 128)) {
+        alert("Password length must be a numerical value no less than 8, and no greater than 128 characters.");
+        return;
      }
-    
+
   var password = "";
   var characters = [];
 
-  
   // CONFIRM IF they want numbers, then add numbers to a conjoined list
   if (confirm("Should your password contain numbers?")) {
     console.log("password contains numbers");
