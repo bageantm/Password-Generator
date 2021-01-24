@@ -1,1 +1,2 @@
 # Password-Generator
+Random password generator that allows users to select numbers, lowercase letters, uppercase letters, and symbols. Once a user chooses a certain character type, all of those characters will be concatenated into an array. Concatenated characters will then be selected at random until the generated password length matches the lenght chosen by the user. If the user chooses an invalid password length (less that 8 characters, or more than 128 characters) an alert will appear notifying the user that their password length is invalid.
